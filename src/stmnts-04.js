@@ -1,8 +1,8 @@
 /*
- * stmnts-03.js
+ * stmnts-04.js
  * Language: javascript
- * Test: tests/stmnts-03.test.js
- * Path: src/stmnts-03.js
+ * Test: tests/stmnts-04.test.js
+ * Path: src/stmnts-04.js
  * Temperature Calculator
  */
 
@@ -12,7 +12,7 @@
  * @returns {number} - temperature in Celsius
  */
 function fahrenheitToCelsius(fahrenheit) {
-  // write your code here & return
+  return +((fahrenheit - 32) * (5 / 9)).toFixed(2);
 }
 
 /**
@@ -21,7 +21,7 @@ function fahrenheitToCelsius(fahrenheit) {
  * @returns {number} - temperature in Fahrenheit
  */
 function celsiusToFahrenheit(celsius) {
-  // write your code here & return
+  return +(celsius * 1.8 + 32).toFixed(2);
 }
 
 module.exports = {
